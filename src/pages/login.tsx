@@ -34,7 +34,7 @@ export default function Login() {
     setErrorMessage("");
     try {
       await login(data.username, data.password);
-      router.push("/home");
+      router.push("/");
     } catch (error) {
       setErrorMessage("Invalid credentials");
     } finally {

@@ -20,6 +20,6 @@ context("Login Page", () => {
     cy.get('input[name="username"]').type("emilys");
     cy.get('input[name="password"]').type("emilyspass");
     cy.get("button").click();
-    cy.url().should("include", "/home");
+    cy.url().should("include", "/");
   });
 });
